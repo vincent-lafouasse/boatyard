@@ -5,6 +5,7 @@ RUN apk update &&\
     apk add bash &&\
     apk add bash-doc &&\
     apk add bash-completion &&\
+    apk add git &&\
     apk add vim &&\
     apk add build-base &&\
     apk add make &&\
