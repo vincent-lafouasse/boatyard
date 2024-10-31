@@ -1,11 +1,16 @@
-FROM debian:latest
+FROM alpine:latest
 
-RUN apt-get update &&\
-    apt-get -y install vim &&\
-    apt-get -y install build-essential &&\
-    apt-get -y install cmake &&\
-    apt-get -y install clang &&\
-    apt-get -y install gcc &&\
-    apt-get -y install lldb &&\
-    apt-get -y install gdb &&\
-    apt-get -y install valgrind
+RUN apk update &&\
+    apk upgrade &&\
+    apk add bash &&\
+    apk add bash-doc &&\
+    apk add bash-completion &&\
+    apk add build-base &&\
+    apk add make &&\
+    apk add cmake &&\
+    apk add clang &&\
+    apk add gcc &&\
+    apk add lldb &&\
+    apk add gdb &&\
+    apk add valgrind &&\
+    apk add readline-dev
