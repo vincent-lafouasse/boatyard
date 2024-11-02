@@ -1,18 +1,18 @@
 FROM alpine:latest
 
-RUN apk update &&\
-    apk upgrade &&\
-    apk add bash &&\
-    apk add bash-doc &&\
-    apk add bash-completion &&\
-    apk add git &&\
-    apk add vim &&\
-    apk add build-base &&\
-    apk add make &&\
-    apk add cmake &&\
-    apk add clang &&\
-    apk add gcc &&\
-    apk add lldb &&\
-    apk add gdb &&\
-    apk add valgrind &&\
-    apk add readline-dev
+RUN apk update \
+    && apk upgrade \
+    && apk add bash \
+    && apk add bash-doc \
+    && apk add bash-completion \
+    && apk add git \
+    && apk add vim \
+    && apk add build-base \
+    && apk add make \
+    && apk add cmake \
+    && apk add clang \
+    && apk add gcc \
+    && apk add lldb \
+    && apk add gdb \
+    && apk add valgrind \
+    && apk add readline-dev
